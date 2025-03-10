@@ -1,4 +1,4 @@
-﻿namespace Aquino_JohnNelson_Act_GUI
+﻿namespace Velasco_Arjay_Act_GUI
 {
     partial class EditForm
     {
@@ -28,261 +28,292 @@
         /// </summary>
         private void InitializeComponent()
         {
-
-
-            this.NameLabel = new System.Windows.Forms.Label();
-            this.NameTextBox = new System.Windows.Forms.TextBox();
-            this.AgeLabel = new System.Windows.Forms.Label();
-            this.AgeTextBox = new System.Windows.Forms.TextBox();
-            this.AddressLabel = new System.Windows.Forms.Label();
-            this.AddressTextBox = new System.Windows.Forms.TextBox();
-            this.ContactNumberLabel = new System.Windows.Forms.Label();
-            this.ContactNumberTextBox = new System.Windows.Forms.TextBox();
-            this.EmailLabel = new System.Windows.Forms.Label();
-            this.EmailTextBox = new System.Windows.Forms.TextBox();
-            this.CourseLabel = new System.Windows.Forms.Label();
-            this.CourseComboBox = new System.Windows.Forms.ComboBox();
-            this.YearLabel = new System.Windows.Forms.Label();
-            this.YearComboBox = new System.Windows.Forms.ComboBox();
-            this.ParentNameLabel = new System.Windows.Forms.Label();
-            this.ParentNameTextBox = new System.Windows.Forms.TextBox();
-            this.ParentContactLabel = new System.Windows.Forms.Label();
-            this.ParentContactTextBox = new System.Windows.Forms.TextBox();
-            this.HobbiesLabel = new System.Windows.Forms.Label();
-            this.HobbiesTextBox = new System.Windows.Forms.TextBox();
-            this.NicknameLabel = new System.Windows.Forms.Label();
-            this.NicknameTextBox = new System.Windows.Forms.TextBox();
-            this.SaveBtn = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            //
+            NameLabel = new Label();
+            NameTextBox = new TextBox();
+            AgeLabel = new Label();
+            AgeTextBox = new TextBox();
+            AddressLabel = new Label();
+            AddressTextBox = new TextBox();
+            ContactNumberLabel = new Label();
+            ContactNumberTextBox = new TextBox();
+            EmailLabel = new Label();
+            EmailTextBox = new TextBox();
+            CourseLabel = new Label();
+            CourseComboBox = new ComboBox();
+            YearLabel = new Label();
+            YearComboBox = new ComboBox();
+            ParentNameLabel = new Label();
+            ParentNameTextBox = new TextBox();
+            ParentContactLabel = new Label();
+            ParentContactTextBox = new TextBox();
+            HobbiesLabel = new Label();
+            HobbiesTextBox = new TextBox();
+            NicknameLabel = new Label();
+            NicknameTextBox = new TextBox();
+            SaveBtn = new Button();
+            SuspendLayout();
+            // 
             // NameLabel
-            //
-            this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(30, 30);
-            this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(38, 13);
-            this.NameLabel.TabIndex = 0;
-            this.NameLabel.Text = "Name:";
-            //
+            // 
+            NameLabel.AutoSize = true;
+            NameLabel.Font = new Font("Segoe UI", 11F);
+            NameLabel.Location = new Point(50, 58);
+            NameLabel.Margin = new Padding(5, 0, 5, 0);
+            NameLabel.Name = "NameLabel";
+            NameLabel.Size = new Size(76, 30);
+            NameLabel.TabIndex = 0;
+            NameLabel.Text = "Name:";
+            // 
             // NameTextBox
-            //
-            this.NameTextBox.Location = new System.Drawing.Point(120, 27);
-            this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(200, 20);
-            this.NameTextBox.TabIndex = 1;
-            //
+            // 
+            NameTextBox.Location = new Point(250, 59);
+            NameTextBox.Margin = new Padding(5, 6, 5, 6);
+            NameTextBox.Name = "NameTextBox";
+            NameTextBox.Size = new Size(331, 31);
+            NameTextBox.TabIndex = 1;
+            // 
             // AgeLabel
-            //
-            this.AgeLabel.AutoSize = true;
-            this.AgeLabel.Location = new System.Drawing.Point(30, 60);
-            this.AgeLabel.Name = "AgeLabel";
-            this.AgeLabel.Size = new System.Drawing.Size(29, 13);
-            this.AgeLabel.TabIndex = 2;
-            this.AgeLabel.Text = "Age:";
-            //
+            // 
+            AgeLabel.AutoSize = true;
+            AgeLabel.Font = new Font("Segoe UI", 11F);
+            AgeLabel.Location = new Point(50, 115);
+            AgeLabel.Margin = new Padding(5, 0, 5, 0);
+            AgeLabel.Name = "AgeLabel";
+            AgeLabel.Size = new Size(57, 30);
+            AgeLabel.TabIndex = 2;
+            AgeLabel.Text = "Age:";
+            // 
             // AgeTextBox
-            //
-            this.AgeTextBox.Location = new System.Drawing.Point(120, 57);
-            this.AgeTextBox.Name = "AgeTextBox";
-            this.AgeTextBox.Size = new System.Drawing.Size(50, 20);
-            this.AgeTextBox.TabIndex = 2;
-            this.AgeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AgeTextBox_KeyPress);
-            //
+            // 
+            AgeTextBox.Location = new Point(250, 117);
+            AgeTextBox.Margin = new Padding(5, 6, 5, 6);
+            AgeTextBox.Name = "AgeTextBox";
+            AgeTextBox.Size = new Size(81, 31);
+            AgeTextBox.TabIndex = 2;
+            AgeTextBox.KeyPress += AgeTextBox_KeyPress;
+            // 
             // AddressLabel
-            //
-            this.AddressLabel.AutoSize = true;
-            this.AddressLabel.Location = new System.Drawing.Point(30, 90);
-            this.AddressLabel.Name = "AddressLabel";
-            this.AddressLabel.Size = new System.Drawing.Size(48, 13);
-            this.AddressLabel.TabIndex = 4;
-            this.AddressLabel.Text = "Address:";
-            //
+            // 
+            AddressLabel.AutoSize = true;
+            AddressLabel.Font = new Font("Segoe UI", 11F);
+            AddressLabel.Location = new Point(50, 173);
+            AddressLabel.Margin = new Padding(5, 0, 5, 0);
+            AddressLabel.Name = "AddressLabel";
+            AddressLabel.Size = new Size(96, 30);
+            AddressLabel.TabIndex = 4;
+            AddressLabel.Text = "Address:";
+            // 
             // AddressTextBox
-            //
-            this.AddressTextBox.Location = new System.Drawing.Point(120, 87);
-            this.AddressTextBox.Name = "AddressTextBox";
-            this.AddressTextBox.Size = new System.Drawing.Size(200, 20);
-            this.AddressTextBox.TabIndex = 3;
-            //
+            // 
+            AddressTextBox.Location = new Point(250, 174);
+            AddressTextBox.Margin = new Padding(5, 6, 5, 6);
+            AddressTextBox.Name = "AddressTextBox";
+            AddressTextBox.Size = new Size(331, 31);
+            AddressTextBox.TabIndex = 3;
+            // 
             // ContactNumberLabel
-            //
-            this.ContactNumberLabel.AutoSize = true;
-            this.ContactNumberLabel.Location = new System.Drawing.Point(30, 120);
-            this.ContactNumberLabel.Name = "ContactNumberLabel";
-            this.ContactNumberLabel.Size = new System.Drawing.Size(87, 13);
-            this.ContactNumberLabel.TabIndex = 6;
-            this.ContactNumberLabel.Text = "Contact Number:";
-            //
+            // 
+            ContactNumberLabel.AutoSize = true;
+            ContactNumberLabel.Font = new Font("Segoe UI", 11F);
+            ContactNumberLabel.Location = new Point(50, 231);
+            ContactNumberLabel.Margin = new Padding(5, 0, 5, 0);
+            ContactNumberLabel.Name = "ContactNumberLabel";
+            ContactNumberLabel.Size = new Size(178, 30);
+            ContactNumberLabel.TabIndex = 6;
+            ContactNumberLabel.Text = "Contact Number:";
+            // 
             // ContactNumberTextBox
-            //
-            this.ContactNumberTextBox.Location = new System.Drawing.Point(120, 117);
-            this.ContactNumberTextBox.Name = "ContactNumberTextBox";
-            this.ContactNumberTextBox.Size = new System.Drawing.Size(150, 20);
-            this.ContactNumberTextBox.TabIndex = 4;
-            this.ContactNumberTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ContactNumberTextBox_KeyPress);
-            //
+            // 
+            ContactNumberTextBox.Location = new Point(250, 232);
+            ContactNumberTextBox.Margin = new Padding(5, 6, 5, 6);
+            ContactNumberTextBox.Name = "ContactNumberTextBox";
+            ContactNumberTextBox.Size = new Size(247, 31);
+            ContactNumberTextBox.TabIndex = 4;
+            ContactNumberTextBox.KeyPress += ContactNumberTextBox_KeyPress;
+            // 
             // EmailLabel
-            //
-            this.EmailLabel.AutoSize = true;
-            this.EmailLabel.Location = new System.Drawing.Point(30, 150);
-            this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(35, 13);
-            this.EmailLabel.TabIndex = 8;
-            this.EmailLabel.Text = "Email:";
-            //
+            // 
+            EmailLabel.AutoSize = true;
+            EmailLabel.Font = new Font("Segoe UI", 11F);
+            EmailLabel.Location = new Point(50, 288);
+            EmailLabel.Margin = new Padding(5, 0, 5, 0);
+            EmailLabel.Name = "EmailLabel";
+            EmailLabel.Size = new Size(69, 30);
+            EmailLabel.TabIndex = 8;
+            EmailLabel.Text = "Email:";
+            // 
             // EmailTextBox
-            //
-            this.EmailTextBox.Location = new System.Drawing.Point(120, 147);
-            this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(200, 20);
-            this.EmailTextBox.TabIndex = 5;
-            //
+            // 
+            EmailTextBox.Location = new Point(250, 290);
+            EmailTextBox.Margin = new Padding(5, 6, 5, 6);
+            EmailTextBox.Name = "EmailTextBox";
+            EmailTextBox.Size = new Size(331, 31);
+            EmailTextBox.TabIndex = 5;
+            // 
             // CourseLabel
-            //
-            this.CourseLabel.AutoSize = true;
-            this.CourseLabel.Location = new System.Drawing.Point(30, 180);
-            this.CourseLabel.Name = "CourseLabel";
-            this.CourseLabel.Size = new System.Drawing.Size(43, 13);
-            this.CourseLabel.TabIndex = 10;
-            this.CourseLabel.Text = "Course:";
-            //
+            // 
+            CourseLabel.AutoSize = true;
+            CourseLabel.Font = new Font("Segoe UI", 11F);
+            CourseLabel.Location = new Point(50, 346);
+            CourseLabel.Margin = new Padding(5, 0, 5, 0);
+            CourseLabel.Name = "CourseLabel";
+            CourseLabel.Size = new Size(86, 30);
+            CourseLabel.TabIndex = 10;
+            CourseLabel.Text = "Course:";
+            // 
             // CourseComboBox
-            //
-            this.CourseComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CourseComboBox.FormattingEnabled = true;
-            this.CourseComboBox.Location = new System.Drawing.Point(120, 177);
-            this.CourseComboBox.Name = "CourseComboBox";
-            this.CourseComboBox.Size = new System.Drawing.Size(120, 21);
-            this.CourseComboBox.TabIndex = 6;
-            //
+            // 
+            CourseComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            CourseComboBox.FormattingEnabled = true;
+            CourseComboBox.Location = new Point(250, 347);
+            CourseComboBox.Margin = new Padding(5, 6, 5, 6);
+            CourseComboBox.Name = "CourseComboBox";
+            CourseComboBox.Size = new Size(197, 33);
+            CourseComboBox.TabIndex = 6;
+            // 
             // YearLabel
-            //
-            this.YearLabel.AutoSize = true;
-            this.YearLabel.Location = new System.Drawing.Point(30, 210);
-            this.YearLabel.Name = "YearLabel";
-            this.YearLabel.Size = new System.Drawing.Size(32, 13);
-            this.YearLabel.TabIndex = 12;
-            this.YearLabel.Text = "Year:";
-            //
+            // 
+            YearLabel.AutoSize = true;
+            YearLabel.Font = new Font("Segoe UI", 11F);
+            YearLabel.Location = new Point(50, 404);
+            YearLabel.Margin = new Padding(5, 0, 5, 0);
+            YearLabel.Name = "YearLabel";
+            YearLabel.Size = new Size(59, 30);
+            YearLabel.TabIndex = 12;
+            YearLabel.Text = "Year:";
+            // 
             // YearComboBox
-            //
-            this.YearComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.YearComboBox.FormattingEnabled = true;
-            this.YearComboBox.Location = new System.Drawing.Point(120, 207);
-            this.YearComboBox.Name = "YearComboBox";
-            this.YearComboBox.Size = new System.Drawing.Size(120, 21);
-            this.YearComboBox.TabIndex = 7;
-            //
+            // 
+            YearComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            YearComboBox.FormattingEnabled = true;
+            YearComboBox.Location = new Point(250, 405);
+            YearComboBox.Margin = new Padding(5, 6, 5, 6);
+            YearComboBox.Name = "YearComboBox";
+            YearComboBox.Size = new Size(197, 33);
+            YearComboBox.TabIndex = 7;
+            // 
             // ParentNameLabel
-            //
-            this.ParentNameLabel.AutoSize = true;
-            this.ParentNameLabel.Location = new System.Drawing.Point(30, 240);
-            this.ParentNameLabel.Name = "ParentNameLabel";
-            this.ParentNameLabel.Size = new System.Drawing.Size(70, 13);
-            this.ParentNameLabel.TabIndex = 14;
-            this.ParentNameLabel.Text = "Parent Name:";
-            //
+            // 
+            ParentNameLabel.AutoSize = true;
+            ParentNameLabel.Font = new Font("Segoe UI", 11F);
+            ParentNameLabel.Location = new Point(50, 462);
+            ParentNameLabel.Margin = new Padding(5, 0, 5, 0);
+            ParentNameLabel.Name = "ParentNameLabel";
+            ParentNameLabel.Size = new Size(143, 30);
+            ParentNameLabel.TabIndex = 14;
+            ParentNameLabel.Text = "Parent Name:";
+            // 
             // ParentNameTextBox
-            //
-            this.ParentNameTextBox.Location = new System.Drawing.Point(120, 237);
-            this.ParentNameTextBox.Name = "ParentNameTextBox";
-            this.ParentNameTextBox.Size = new System.Drawing.Size(200, 20);
-            this.ParentNameTextBox.TabIndex = 8;
-            //
+            // 
+            ParentNameTextBox.Location = new Point(250, 463);
+            ParentNameTextBox.Margin = new Padding(5, 6, 5, 6);
+            ParentNameTextBox.Name = "ParentNameTextBox";
+            ParentNameTextBox.Size = new Size(331, 31);
+            ParentNameTextBox.TabIndex = 8;
+            // 
             // ParentContactLabel
-            //
-            this.ParentContactLabel.AutoSize = true;
-            this.ParentContactLabel.Location = new System.Drawing.Point(30, 270);
-            this.ParentContactLabel.Name = "ParentContactLabel";
-            this.ParentContactLabel.Size = new System.Drawing.Size(91, 13);
-            this.ParentContactLabel.TabIndex = 16;
-            this.ParentContactLabel.Text = "Parent Contact:";
-            //
+            // 
+            ParentContactLabel.AutoSize = true;
+            ParentContactLabel.Font = new Font("Segoe UI", 11F);
+            ParentContactLabel.Location = new Point(50, 519);
+            ParentContactLabel.Margin = new Padding(5, 0, 5, 0);
+            ParentContactLabel.Name = "ParentContactLabel";
+            ParentContactLabel.Size = new Size(159, 30);
+            ParentContactLabel.TabIndex = 16;
+            ParentContactLabel.Text = "Parent Contact:";
+            // 
             // ParentContactTextBox
-            //
-            this.ParentContactTextBox.Location = new System.Drawing.Point(120, 267);
-            this.ParentContactTextBox.Name = "ParentContactTextBox";
-            this.ParentContactTextBox.Size = new System.Drawing.Size(150, 20);
-            this.ParentContactTextBox.TabIndex = 9;
-            this.ParentContactTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ParentContactTextBox_KeyPress);
-            //
+            // 
+            ParentContactTextBox.Location = new Point(250, 520);
+            ParentContactTextBox.Margin = new Padding(5, 6, 5, 6);
+            ParentContactTextBox.Name = "ParentContactTextBox";
+            ParentContactTextBox.Size = new Size(247, 31);
+            ParentContactTextBox.TabIndex = 9;
+            ParentContactTextBox.KeyPress += ParentContactTextBox_KeyPress;
+            // 
             // HobbiesLabel
-            //
-            this.HobbiesLabel.AutoSize = true;
-            this.HobbiesLabel.Location = new System.Drawing.Point(30, 300);
-            this.HobbiesLabel.Name = "HobbiesLabel";
-            this.HobbiesLabel.Size = new System.Drawing.Size(49, 13);
-            this.HobbiesLabel.TabIndex = 18;
-            this.HobbiesLabel.Text = "Hobbies:";
-            //
+            // 
+            HobbiesLabel.AutoSize = true;
+            HobbiesLabel.Font = new Font("Segoe UI", 11F);
+            HobbiesLabel.Location = new Point(50, 577);
+            HobbiesLabel.Margin = new Padding(5, 0, 5, 0);
+            HobbiesLabel.Name = "HobbiesLabel";
+            HobbiesLabel.Size = new Size(99, 30);
+            HobbiesLabel.TabIndex = 18;
+            HobbiesLabel.Text = "Hobbies:";
+            // 
             // HobbiesTextBox
-            //
-            this.HobbiesTextBox.Location = new System.Drawing.Point(120, 297);
-            this.HobbiesTextBox.Name = "HobbiesTextBox";
-            this.HobbiesTextBox.Size = new System.Drawing.Size(200, 20);
-            this.HobbiesTextBox.TabIndex = 10;
-            //
+            // 
+            HobbiesTextBox.Location = new Point(250, 578);
+            HobbiesTextBox.Margin = new Padding(5, 6, 5, 6);
+            HobbiesTextBox.Name = "HobbiesTextBox";
+            HobbiesTextBox.Size = new Size(331, 31);
+            HobbiesTextBox.TabIndex = 10;
+            // 
             // NicknameLabel
-            //
-            this.NicknameLabel.AutoSize = true;
-            this.NicknameLabel.Location = new System.Drawing.Point(30, 330);
-            this.NicknameLabel.Name = "NicknameLabel";
-            this.NicknameLabel.Size = new System.Drawing.Size(58, 13);
-            this.NicknameLabel.TabIndex = 20;
-            this.NicknameLabel.Text = "Nickname:";
-            //
+            // 
+            NicknameLabel.AutoSize = true;
+            NicknameLabel.Font = new Font("Segoe UI", 11F);
+            NicknameLabel.Location = new Point(50, 635);
+            NicknameLabel.Margin = new Padding(5, 0, 5, 0);
+            NicknameLabel.Name = "NicknameLabel";
+            NicknameLabel.Size = new Size(114, 30);
+            NicknameLabel.TabIndex = 20;
+            NicknameLabel.Text = "Nickname:";
+            // 
             // NicknameTextBox
-            //
-            this.NicknameTextBox.Location = new System.Drawing.Point(120, 327);
-            this.NicknameTextBox.Name = "NicknameTextBox";
-            this.NicknameTextBox.Size = new System.Drawing.Size(200, 20);
-            this.NicknameTextBox.TabIndex = 11;
-            //
+            // 
+            NicknameTextBox.Location = new Point(250, 636);
+            NicknameTextBox.Margin = new Padding(5, 6, 5, 6);
+            NicknameTextBox.Name = "NicknameTextBox";
+            NicknameTextBox.Size = new Size(331, 31);
+            NicknameTextBox.TabIndex = 11;
+            // 
             // SaveBtn
-            //
-            this.SaveBtn.Location = new System.Drawing.Point(120, 370);
-            this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(75, 23);
-            this.SaveBtn.TabIndex = 12;
-            this.SaveBtn.Text = "Save";
-            this.SaveBtn.UseVisualStyleBackColor = true;
-            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
-            //
+            // 
+            SaveBtn.Location = new Point(250, 724);
+            SaveBtn.Margin = new Padding(5, 6, 5, 6);
+            SaveBtn.Name = "SaveBtn";
+            SaveBtn.Size = new Size(125, 44);
+            SaveBtn.TabIndex = 12;
+            SaveBtn.Text = "Save";
+            SaveBtn.UseVisualStyleBackColor = true;
+            SaveBtn.Click += SaveBtn_Click;
+            // 
             // EditForm
-            //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 450);
-            this.Controls.Add(this.SaveBtn);
-            this.Controls.Add(this.NicknameTextBox);
-            this.Controls.Add(this.NicknameLabel);
-            this.Controls.Add(this.HobbiesTextBox);
-            this.Controls.Add(this.HobbiesLabel);
-            this.Controls.Add(this.ParentContactTextBox);
-            this.Controls.Add(this.ParentContactLabel);
-            this.Controls.Add(this.ParentNameTextBox);
-            this.Controls.Add(this.ParentNameLabel);
-            this.Controls.Add(this.YearComboBox);
-            this.Controls.Add(this.YearLabel);
-            this.Controls.Add(this.CourseComboBox);
-            this.Controls.Add(this.CourseLabel);
-            this.Controls.Add(this.EmailTextBox);
-            this.Controls.Add(this.EmailLabel);
-            this.Controls.Add(this.ContactNumberTextBox);
-            this.Controls.Add(this.ContactNumberLabel);
-            this.Controls.Add(this.AddressTextBox);
-            this.Controls.Add(this.AddressLabel);
-            this.Controls.Add(this.AgeTextBox);
-            this.Controls.Add(this.AgeLabel);
-            this.Controls.Add(this.NameTextBox);
-            this.Controls.Add(this.NameLabel);
-            this.Name = "EditForm";
-            this.Text = "Edit Page";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
-
-
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(667, 865);
+            Controls.Add(SaveBtn);
+            Controls.Add(NicknameTextBox);
+            Controls.Add(NicknameLabel);
+            Controls.Add(HobbiesTextBox);
+            Controls.Add(HobbiesLabel);
+            Controls.Add(ParentContactTextBox);
+            Controls.Add(ParentContactLabel);
+            Controls.Add(ParentNameTextBox);
+            Controls.Add(ParentNameLabel);
+            Controls.Add(YearComboBox);
+            Controls.Add(YearLabel);
+            Controls.Add(CourseComboBox);
+            Controls.Add(CourseLabel);
+            Controls.Add(EmailTextBox);
+            Controls.Add(EmailLabel);
+            Controls.Add(ContactNumberTextBox);
+            Controls.Add(ContactNumberLabel);
+            Controls.Add(AddressTextBox);
+            Controls.Add(AddressLabel);
+            Controls.Add(AgeTextBox);
+            Controls.Add(AgeLabel);
+            Controls.Add(NameTextBox);
+            Controls.Add(NameLabel);
+            Margin = new Padding(5, 6, 5, 6);
+            Name = "EditForm";
+            Text = "Edit Page";
+            Load += EditForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private StudentForm _studentForm;

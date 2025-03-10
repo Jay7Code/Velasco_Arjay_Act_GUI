@@ -1,4 +1,4 @@
-﻿namespace Aquino_JohnNelson_Act_GUI
+﻿namespace Velasco_Arjay_Act_GUI
 {
     partial class StudentForm
     {
@@ -58,18 +58,20 @@
             // StudentPictureBox
             // 
             StudentPictureBox.BorderStyle = BorderStyle.FixedSingle;
-            StudentPictureBox.Location = new Point(26, 28);
+            StudentPictureBox.Location = new Point(37, 47);
+            StudentPictureBox.Margin = new Padding(4, 5, 4, 5);
             StudentPictureBox.Name = "StudentPictureBox";
-            StudentPictureBox.Size = new Size(160, 141);
+            StudentPictureBox.Size = new Size(228, 301);
             StudentPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             StudentPictureBox.TabIndex = 0;
             StudentPictureBox.TabStop = false;
             // 
             // AddImageBtn
             // 
-            AddImageBtn.Location = new Point(26, 183);
+            AddImageBtn.Location = new Point(36, 362);
+            AddImageBtn.Margin = new Padding(4, 5, 4, 5);
             AddImageBtn.Name = "AddImageBtn";
-            AddImageBtn.Size = new Size(160, 36);
+            AddImageBtn.Size = new Size(229, 60);
             AddImageBtn.TabIndex = 1;
             AddImageBtn.Text = "Add Image";
             AddImageBtn.UseVisualStyleBackColor = true;
@@ -77,9 +79,10 @@
             // 
             // ChangeImageBtn
             // 
-            ChangeImageBtn.Location = new Point(26, 225);
+            ChangeImageBtn.Location = new Point(36, 432);
+            ChangeImageBtn.Margin = new Padding(4, 5, 4, 5);
             ChangeImageBtn.Name = "ChangeImageBtn";
-            ChangeImageBtn.Size = new Size(160, 32);
+            ChangeImageBtn.Size = new Size(229, 53);
             ChangeImageBtn.TabIndex = 2;
             ChangeImageBtn.Text = "Change Image";
             ChangeImageBtn.UseVisualStyleBackColor = true;
@@ -88,199 +91,229 @@
             // StudentNameLabel
             // 
             StudentNameLabel.AutoSize = true;
-            StudentNameLabel.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            StudentNameLabel.Location = new Point(293, 52);
+            StudentNameLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            StudentNameLabel.Location = new Point(496, 62);
+            StudentNameLabel.Margin = new Padding(4, 0, 4, 0);
             StudentNameLabel.Name = "StudentNameLabel";
-            StudentNameLabel.Size = new Size(105, 17);
+            StudentNameLabel.Size = new Size(169, 30);
             StudentNameLabel.TabIndex = 3;
             StudentNameLabel.Text = "StudentName";
             // 
             // NameLabel
             // 
             NameLabel.AutoSize = true;
-            NameLabel.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            NameLabel.Location = new Point(192, 56);
+            NameLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            NameLabel.Location = new Point(291, 68);
+            NameLabel.Margin = new Padding(4, 0, 4, 0);
             NameLabel.Name = "NameLabel";
-            NameLabel.Size = new Size(43, 13);
+            NameLabel.Size = new Size(89, 30);
             NameLabel.TabIndex = 4;
             NameLabel.Text = "Name:";
             // 
             // AgeLabel
             // 
             AgeLabel.AutoSize = true;
-            AgeLabel.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            AgeLabel.Location = new Point(192, 75);
+            AgeLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            AgeLabel.Location = new Point(291, 100);
+            AgeLabel.Margin = new Padding(4, 0, 4, 0);
             AgeLabel.Name = "AgeLabel";
-            AgeLabel.Size = new Size(33, 13);
+            AgeLabel.Size = new Size(65, 30);
             AgeLabel.TabIndex = 5;
             AgeLabel.Text = "Age:";
             // 
             // StudentAgeLabel
             // 
             StudentAgeLabel.AutoSize = true;
-            StudentAgeLabel.Location = new Point(293, 75);
+            StudentAgeLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            StudentAgeLabel.Location = new Point(496, 100);
+            StudentAgeLabel.Margin = new Padding(4, 0, 4, 0);
             StudentAgeLabel.Name = "StudentAgeLabel";
-            StudentAgeLabel.Size = new Size(69, 15);
+            StudentAgeLabel.Size = new Size(145, 30);
             StudentAgeLabel.TabIndex = 6;
             StudentAgeLabel.Text = "StudentAge";
             // 
             // AddressLabel
             // 
             AddressLabel.AutoSize = true;
-            AddressLabel.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            AddressLabel.Location = new Point(192, 94);
+            AddressLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            AddressLabel.Location = new Point(291, 132);
+            AddressLabel.Margin = new Padding(4, 0, 4, 0);
             AddressLabel.Name = "AddressLabel";
-            AddressLabel.Size = new Size(56, 13);
+            AddressLabel.Size = new Size(114, 30);
             AddressLabel.TabIndex = 7;
             AddressLabel.Text = "Address:";
             // 
             // StudentAddressLabel
             // 
             StudentAddressLabel.AutoSize = true;
-            StudentAddressLabel.Location = new Point(293, 93);
+            StudentAddressLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            StudentAddressLabel.Location = new Point(496, 130);
+            StudentAddressLabel.Margin = new Padding(4, 0, 4, 0);
             StudentAddressLabel.Name = "StudentAddressLabel";
-            StudentAddressLabel.Size = new Size(90, 15);
+            StudentAddressLabel.Size = new Size(194, 30);
             StudentAddressLabel.TabIndex = 8;
             StudentAddressLabel.Text = "StudentAddress";
             // 
             // ContactLabel
             // 
             ContactLabel.AutoSize = true;
-            ContactLabel.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ContactLabel.Location = new Point(192, 112);
+            ContactLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            ContactLabel.Location = new Point(291, 162);
+            ContactLabel.Margin = new Padding(4, 0, 4, 0);
             ContactLabel.Name = "ContactLabel";
-            ContactLabel.Size = new Size(55, 13);
+            ContactLabel.Size = new Size(108, 30);
             ContactLabel.TabIndex = 9;
             ContactLabel.Text = "Contact:";
             // 
             // StudentContactLabel
             // 
             StudentContactLabel.AutoSize = true;
-            StudentContactLabel.Location = new Point(293, 112);
+            StudentContactLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            StudentContactLabel.Location = new Point(496, 162);
+            StudentContactLabel.Margin = new Padding(4, 0, 4, 0);
             StudentContactLabel.Name = "StudentContactLabel";
-            StudentContactLabel.Size = new Size(90, 15);
+            StudentContactLabel.Size = new Size(188, 30);
             StudentContactLabel.TabIndex = 10;
             StudentContactLabel.Text = "StudentContact";
             // 
             // EmailLabel
             // 
             EmailLabel.AutoSize = true;
-            EmailLabel.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            EmailLabel.Location = new Point(192, 131);
+            EmailLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            EmailLabel.Location = new Point(291, 193);
+            EmailLabel.Margin = new Padding(4, 0, 4, 0);
             EmailLabel.Name = "EmailLabel";
-            EmailLabel.Size = new Size(41, 13);
+            EmailLabel.Size = new Size(85, 30);
             EmailLabel.TabIndex = 11;
             EmailLabel.Text = "Email:";
             // 
             // StudentEmailLabel
             // 
             StudentEmailLabel.AutoSize = true;
-            StudentEmailLabel.Location = new Point(293, 131);
+            StudentEmailLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            StudentEmailLabel.Location = new Point(496, 193);
+            StudentEmailLabel.Margin = new Padding(4, 0, 4, 0);
             StudentEmailLabel.Name = "StudentEmailLabel";
-            StudentEmailLabel.Size = new Size(77, 15);
+            StudentEmailLabel.Size = new Size(165, 30);
             StudentEmailLabel.TabIndex = 12;
             StudentEmailLabel.Text = "StudentEmail";
             // 
             // CourseYearLabel
             // 
             CourseYearLabel.AutoSize = true;
-            CourseYearLabel.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CourseYearLabel.Location = new Point(192, 150);
+            CourseYearLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            CourseYearLabel.Location = new Point(291, 225);
+            CourseYearLabel.Margin = new Padding(4, 0, 4, 0);
             CourseYearLabel.Name = "CourseYearLabel";
-            CourseYearLabel.Size = new Size(84, 13);
+            CourseYearLabel.Size = new Size(170, 30);
             CourseYearLabel.TabIndex = 13;
             CourseYearLabel.Text = "Course & Year:";
             // 
             // StudentCourseYearLabel
             // 
             StudentCourseYearLabel.AutoSize = true;
-            StudentCourseYearLabel.Location = new Point(293, 150);
+            StudentCourseYearLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            StudentCourseYearLabel.Location = new Point(496, 225);
+            StudentCourseYearLabel.Margin = new Padding(4, 0, 4, 0);
             StudentCourseYearLabel.Name = "StudentCourseYearLabel";
-            StudentCourseYearLabel.Size = new Size(107, 15);
+            StudentCourseYearLabel.Size = new Size(236, 30);
             StudentCourseYearLabel.TabIndex = 14;
             StudentCourseYearLabel.Text = "StudentCourseYear";
             // 
             // ParentNameLbl
             // 
             ParentNameLbl.AutoSize = true;
-            ParentNameLbl.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ParentNameLbl.Location = new Point(192, 169);
+            ParentNameLbl.Font = new Font("Microsoft Sans Serif", 13F);
+            ParentNameLbl.Location = new Point(291, 257);
+            ParentNameLbl.Margin = new Padding(4, 0, 4, 0);
             ParentNameLbl.Name = "ParentNameLbl";
-            ParentNameLbl.Size = new Size(84, 13);
+            ParentNameLbl.Size = new Size(171, 30);
             ParentNameLbl.TabIndex = 15;
             ParentNameLbl.Text = "Parent Name:";
             // 
             // ParentNameLabel
             // 
             ParentNameLabel.AutoSize = true;
-            ParentNameLabel.Location = new Point(293, 169);
+            ParentNameLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            ParentNameLabel.Location = new Point(496, 257);
+            ParentNameLabel.Margin = new Padding(4, 0, 4, 0);
             ParentNameLabel.Name = "ParentNameLabel";
-            ParentNameLabel.Size = new Size(73, 15);
+            ParentNameLabel.Size = new Size(157, 30);
             ParentNameLabel.TabIndex = 16;
             ParentNameLabel.Text = "ParentName";
             // 
             // ParentContactLbl
             // 
             ParentContactLbl.AutoSize = true;
-            ParentContactLbl.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ParentContactLbl.Location = new Point(192, 188);
+            ParentContactLbl.Font = new Font("Microsoft Sans Serif", 13F);
+            ParentContactLbl.Location = new Point(291, 288);
+            ParentContactLbl.Margin = new Padding(4, 0, 4, 0);
             ParentContactLbl.Name = "ParentContactLbl";
-            ParentContactLbl.Size = new Size(96, 13);
+            ParentContactLbl.Size = new Size(190, 30);
             ParentContactLbl.TabIndex = 17;
             ParentContactLbl.Text = "Parent Contact:";
             // 
             // ParentContactLabel
             // 
             ParentContactLabel.AutoSize = true;
-            ParentContactLabel.Location = new Point(293, 188);
+            ParentContactLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            ParentContactLabel.Location = new Point(496, 288);
+            ParentContactLabel.Margin = new Padding(4, 0, 4, 0);
             ParentContactLabel.Name = "ParentContactLabel";
-            ParentContactLabel.Size = new Size(83, 15);
+            ParentContactLabel.Size = new Size(176, 30);
             ParentContactLabel.TabIndex = 18;
             ParentContactLabel.Text = "ParentContact";
             // 
             // HobbiesLbl
             // 
             HobbiesLbl.AutoSize = true;
-            HobbiesLbl.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            HobbiesLbl.Location = new Point(192, 206);
+            HobbiesLbl.Font = new Font("Microsoft Sans Serif", 13F);
+            HobbiesLbl.Location = new Point(291, 318);
+            HobbiesLbl.Margin = new Padding(4, 0, 4, 0);
             HobbiesLbl.Name = "HobbiesLbl";
-            HobbiesLbl.Size = new Size(57, 13);
+            HobbiesLbl.Size = new Size(114, 30);
             HobbiesLbl.TabIndex = 19;
             HobbiesLbl.Text = "Hobbies:";
             // 
             // HobbiesLabel
             // 
             HobbiesLabel.AutoSize = true;
-            HobbiesLabel.Location = new Point(293, 206);
+            HobbiesLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            HobbiesLabel.Location = new Point(496, 318);
+            HobbiesLabel.Margin = new Padding(4, 0, 4, 0);
             HobbiesLabel.Name = "HobbiesLabel";
-            HobbiesLabel.Size = new Size(51, 15);
+            HobbiesLabel.Size = new Size(107, 30);
             HobbiesLabel.TabIndex = 20;
             HobbiesLabel.Text = "Hobbies";
             // 
             // NicknameLbl
             // 
             NicknameLbl.AutoSize = true;
-            NicknameLbl.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            NicknameLbl.Location = new Point(192, 225);
+            NicknameLbl.Font = new Font("Microsoft Sans Serif", 13F);
+            NicknameLbl.Location = new Point(291, 350);
+            NicknameLbl.Margin = new Padding(4, 0, 4, 0);
             NicknameLbl.Name = "NicknameLbl";
-            NicknameLbl.Size = new Size(67, 13);
+            NicknameLbl.Size = new Size(135, 30);
             NicknameLbl.TabIndex = 21;
             NicknameLbl.Text = "Nickname:";
             // 
             // NicknameLabel
             // 
             NicknameLabel.AutoSize = true;
-            NicknameLabel.Location = new Point(293, 224);
+            NicknameLabel.Font = new Font("Microsoft Sans Serif", 13F);
+            NicknameLabel.Location = new Point(496, 348);
+            NicknameLabel.Margin = new Padding(4, 0, 4, 0);
             NicknameLabel.Name = "NicknameLabel";
-            NicknameLabel.Size = new Size(61, 15);
+            NicknameLabel.Size = new Size(128, 30);
             NicknameLabel.TabIndex = 22;
             NicknameLabel.Text = "Nickname";
             // 
             // EditUpdateBtn
             // 
-            EditUpdateBtn.Location = new Point(192, 262);
+            EditUpdateBtn.Location = new Point(411, 435);
+            EditUpdateBtn.Margin = new Padding(4, 5, 4, 5);
             EditUpdateBtn.Name = "EditUpdateBtn";
-            EditUpdateBtn.Size = new Size(88, 22);
+            EditUpdateBtn.Size = new Size(176, 50);
             EditUpdateBtn.TabIndex = 23;
             EditUpdateBtn.Text = "Edit/Update";
             EditUpdateBtn.UseVisualStyleBackColor = true;
@@ -288,9 +321,9 @@
             // 
             // StudentForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(584, 411);
+            ClientSize = new Size(834, 685);
             Controls.Add(EditUpdateBtn);
             Controls.Add(NicknameLabel);
             Controls.Add(NicknameLbl);
@@ -315,13 +348,13 @@
             Controls.Add(ChangeImageBtn);
             Controls.Add(AddImageBtn);
             Controls.Add(StudentPictureBox);
-            Margin = new Padding(3, 2, 3, 2);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "StudentForm";
             Text = "Student Page";
+            Load += StudentForm_Load;
             ((System.ComponentModel.ISupportInitialize)StudentPictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
         }
 
         public void UpdateStudentInfo(UserProfile userProfile)

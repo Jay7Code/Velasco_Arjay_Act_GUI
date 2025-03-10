@@ -1,4 +1,4 @@
-﻿using Aquino_JohnNelson_Act_GUI;
+﻿using Velasco_Arjay_Act_GUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Aquino_JohnNelson_Act_GUI
+namespace Velasco_Arjay_Act_GUI
 {
     public partial class StudentForm : Form
     {
@@ -17,16 +17,16 @@ namespace Aquino_JohnNelson_Act_GUI
         {
             InitializeComponent();
             // Mock Student Data
-            StudentNameLabel.Text = "John Nelson Aquino";
-            StudentAgeLabel.Text = "24";
-            StudentAddressLabel.Text = "123 Main Street";
-            StudentContactLabel.Text = "09123456789";
-            StudentEmailLabel.Text = "email@sample.com";
+            StudentNameLabel.Text = "Arjay Velasco";
+            StudentAgeLabel.Text = "21";
+            StudentAddressLabel.Text = "321 Street";
+            StudentContactLabel.Text = "091512345321";
+            StudentEmailLabel.Text = "gmail@sample.com";
             StudentCourseYearLabel.Text = "BSIT Third";
-            ParentNameLabel.Text = "Gina Aquino";
-            ParentContactLabel.Text = "09123456789";
-            HobbiesLabel.Text = "Programming, Gaming";
-            NicknameLabel.Text = "JN";
+            ParentNameLabel.Text = "Ariane Velasco";
+            ParentContactLabel.Text = "09231431234";
+            HobbiesLabel.Text = "Coding, Gaming, Exercising";
+            NicknameLabel.Text = "Jay";
         }
 
         private void AddImageBtn_Click(object sender, EventArgs e)
@@ -46,5 +46,9 @@ namespace Aquino_JohnNelson_Act_GUI
             editForm.Show();
         }
 
+        private void StudentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

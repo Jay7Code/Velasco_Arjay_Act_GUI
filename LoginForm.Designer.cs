@@ -1,4 +1,4 @@
-﻿namespace Aquino_JohnNelson_Act_GUI
+﻿namespace Velasco_Arjay_Act_GUI
 {
     partial class LoginForm
     {
@@ -38,46 +38,50 @@
             // UsernameLabel
             // 
             UsernameLabel.AutoSize = true;
-            UsernameLabel.Location = new Point(58, 58);
-            UsernameLabel.Margin = new Padding(4, 0, 4, 0);
+            UsernameLabel.Font = new Font("Segoe UI", 13F);
+            UsernameLabel.Location = new Point(39, 105);
+            UsernameLabel.Margin = new Padding(6, 0, 6, 0);
             UsernameLabel.Name = "UsernameLabel";
-            UsernameLabel.Size = new Size(63, 15);
+            UsernameLabel.Size = new Size(137, 36);
             UsernameLabel.TabIndex = 0;
             UsernameLabel.Text = "Username:";
             // 
             // PasswordLabel
             // 
             PasswordLabel.AutoSize = true;
-            PasswordLabel.Location = new Point(58, 104);
-            PasswordLabel.Margin = new Padding(4, 0, 4, 0);
+            PasswordLabel.Font = new Font("Segoe UI", 13F);
+            PasswordLabel.Location = new Point(39, 205);
+            PasswordLabel.Margin = new Padding(6, 0, 6, 0);
             PasswordLabel.Name = "PasswordLabel";
-            PasswordLabel.Size = new Size(60, 15);
+            PasswordLabel.Size = new Size(128, 36);
             PasswordLabel.TabIndex = 1;
             PasswordLabel.Text = "Password:";
             // 
             // UsernameTextBox
             // 
-            UsernameTextBox.Location = new Point(140, 54);
-            UsernameTextBox.Margin = new Padding(4, 3, 4, 3);
+            UsernameTextBox.Font = new Font("Segoe UI", 8.25F);
+            UsernameTextBox.Location = new Point(200, 113);
+            UsernameTextBox.Margin = new Padding(6, 5, 6, 5);
             UsernameTextBox.Name = "UsernameTextBox";
-            UsernameTextBox.Size = new Size(233, 23);
+            UsernameTextBox.Size = new Size(331, 29);
             UsernameTextBox.TabIndex = 2;
             // 
             // PasswordTextBox
             // 
-            PasswordTextBox.Location = new Point(140, 100);
-            PasswordTextBox.Margin = new Padding(4, 3, 4, 3);
+            PasswordTextBox.Font = new Font("Segoe UI", 8.25F);
+            PasswordTextBox.Location = new Point(200, 213);
+            PasswordTextBox.Margin = new Padding(6, 5, 6, 5);
             PasswordTextBox.Name = "PasswordTextBox";
             PasswordTextBox.PasswordChar = '*';
-            PasswordTextBox.Size = new Size(233, 23);
+            PasswordTextBox.Size = new Size(331, 29);
             PasswordTextBox.TabIndex = 3;
             // 
             // LoginBtn
             // 
-            LoginBtn.Location = new Point(140, 150);
-            LoginBtn.Margin = new Padding(4, 3, 4, 3);
+            LoginBtn.Location = new Point(307, 293);
+            LoginBtn.Margin = new Padding(6, 5, 6, 5);
             LoginBtn.Name = "LoginBtn";
-            LoginBtn.Size = new Size(88, 27);
+            LoginBtn.Size = new Size(126, 45);
             LoginBtn.TabIndex = 4;
             LoginBtn.Text = "Login";
             LoginBtn.UseVisualStyleBackColor = true;
@@ -85,20 +89,20 @@
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(448, 243);
+            ClientSize = new Size(640, 405);
             Controls.Add(LoginBtn);
             Controls.Add(PasswordTextBox);
             Controls.Add(UsernameTextBox);
             Controls.Add(PasswordLabel);
             Controls.Add(UsernameLabel);
-            Margin = new Padding(4, 3, 4, 3);
+            Margin = new Padding(6, 5, 6, 5);
             Name = "LoginForm";
             Text = "Login Page";
+            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
-
         }
 
         #endregion

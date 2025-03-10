@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Aquino_JohnNelson_Act_GUI
+namespace Velasco_Arjay_Act_GUI
 {
     public partial class LoginForm : Form
     {
-        private string validUsername = "Nelson";
-        private string validPassword = "password";
+        private string validUsername = "Arjay";
+        private string validPassword = "passletter";
         private int loginAttempts = 0;
 
         public LoginForm()
@@ -66,6 +66,11 @@ namespace Aquino_JohnNelson_Act_GUI
                 PasswordTextBox.Clear();
                 PasswordTextBox.Focus(); // Set focus back to password textbox for next attempt
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
