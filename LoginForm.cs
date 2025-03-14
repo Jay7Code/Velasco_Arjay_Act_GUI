@@ -20,7 +20,7 @@ namespace Velasco_Arjay_Act_GUI
         private const string serverName = "localhost";
         private const string dataBaseName = "StudentRecordDB";
         private const string uid = "root";
-        private const string password = "P@ssw0rd123!..";
+        private const string password = "09393124450";
 
         //set value of index to 0, needed when accessing data
         private int index = 0;
