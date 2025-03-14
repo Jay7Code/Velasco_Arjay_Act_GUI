@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Velasco_Arjay_Act_GUI
 {
@@ -16,9 +17,104 @@ namespace Velasco_Arjay_Act_GUI
         private string validPassword = "passletter";
         private int loginAttempts = 0;
 
+        private const string serverName = "localhost";
+        private const string dataBaseName = "StudentRecordDB";
+        private const string uid = "root";
+        private const string password = "P@ssw0rd123!..";
+
+        //set value of index to 0, needed when accessing data
+        private int index = 0;
+
+        //initialize class for DataTable
+        //DataTable -used to store data in a tabular format,
+        private DataTable dt = new DataTable();
+
+
+        //variables where value of username and password from database will be stored
+        public string uname;
+        public string pword;
+
+        //initialize properties
+
+        //Represents a connection to database
+        public MySqlConnection con { get; set; }
+        public MySqlCommand cmd { get; set; }
+        public MySqlDataReader dr { get; set; }
+
+        public int id { get; set; }
+        public string username { get; set; }
+        public string passsword { get; set; }
+
+        //public Form1() { }
+        public LoginForm(string username, string password)
+        {
+            this.username = username;
+            this.passsword = password;
+        }
+
+
         public LoginForm()
         {
+            con = new MySqlConnection($"Server = {serverName} ; Database = " +
+                $"{dataBaseName}; Uid = {uid}; Pwd = {password};");
+            cmd = new MySqlCommand();
+            cmd.Connection = this.con;
             InitializeComponent();
+            if (!Connect())
+                MessageBox.Show("Please Configure Your Connection");
+        }
+
+        public bool Connect()
+        {
+            if (this.con.State == ConnectionState.Closed || this.con.State == ConnectionState.Broken)
+            {
+                try
+                {
+                    this.con.Open();
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        //method to connect to disconnect
+        public void Disconnect()
+        {
+            if (this.con.State == ConnectionState.Open)
+            {
+                this.con.Close();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (con.State == ConnectionState.Open)
+            {
+                load_users();
+                //this.fill_TextBoxes(index);
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
+
+        private void load_users()
+        {
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * from USERLOGINTB";
+            dr = cmd.ExecuteReader();
+            dt.Clear();
+            dt.Load(dr);
+        }
+
+        private void usercred(int i)
+        {
+            uname = dt.Rows[i][1].ToString();
+            pword = dt.Rows[i][2].ToString();
         }
 
         private void LoginBtn_Click(object sender, EventArgs e)
